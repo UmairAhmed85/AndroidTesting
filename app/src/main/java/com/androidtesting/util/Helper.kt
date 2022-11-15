@@ -14,7 +14,21 @@ class Helper {
             i++
             j--
         }
-
         return result
+    }
+
+    /*
+    Write test cases for below constraints
+    Password should not be empty
+    Password length should be in 6 to 15 characters
+     */
+    fun validatePassword(value: String?): String? {
+        value?.let {
+            if (value.length !in 6..15) {
+                return null
+            }
+        } ?: return null
+
+        return value
     }
 }
