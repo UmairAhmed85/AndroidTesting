@@ -1,0 +1,1 @@
+class ProductModel(val name: String, val city: String)
